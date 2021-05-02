@@ -1,0 +1,13 @@
+.meme {
+  background-color: grey;
+  height: 84vh;
+  overflow-y: scroll;
+  border-radius: 1%;
+}
+.cardhead {
+  background-color: gold;
+  margin: 1%;
+}
+.body {
+  height: 50%;
+}
