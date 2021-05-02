@@ -61,7 +61,7 @@ function SearchModal(props,refFeatures){
 
         //Defining onClick function for clearing search field
         const onClick=()=>{
-            setQuery()
+            setQuery('')
             setPageNumber(1)
         }
         return (

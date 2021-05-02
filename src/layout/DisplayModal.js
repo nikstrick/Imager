@@ -14,9 +14,9 @@ export default function DisplayModal({view,toggle,modal}) {
         </ModalHeader>
         <ModalBody>
             {/* {view.title} */}
-            <Container fluid style={{padding:"2%",maxWidth:"30rem",maxHeight:"50rem"}}>
+            <Container fluid style={{padding:"1%",maxWidth:"22rem",maxHeight:"40rem"}}>
             <img 
-            style={{maxWidth:"25rem",maxHeight:"40rem",padding:'2rem'}}
+            style={{maxWidth:"20rem",maxHeight:"30rem",padding:'1%'}}
             src={`https://farm${view.farm}.staticflickr.com/${view.server}/${view.id}_${view.secret}.jpg`}
             alt={view.title} />
             </Container>
