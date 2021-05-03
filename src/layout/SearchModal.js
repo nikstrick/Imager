@@ -17,14 +17,14 @@ import {connect} from 'react-redux';
 import {getMeme} from '../actions/memeAction';
 import PropTypes from 'prop-types';
 
-function SearchModal(props,refFeatures){
+function SearchModal(props,ref){
     const [modal, setModal] = useState(false);
     const [view,setView]=useState({ id: 51151464928, owner: "163606359@N02", secret: "106f8b0a16", server: 65535, farm: 66, title: "*205*"});
     
 
     //Parameters for Infinite Search
     const [query,setQuery]=useState();
-    const [safe,setSafe]=useState(2);
+    const [safe,setSafe]=useState(1);
     const [pageNumber,setPageNumber]=useState(1);
 
     //React Lifecycle for Infinite Search with states 
@@ -67,9 +67,9 @@ function SearchModal(props,refFeatures){
         return (
             <div className="text-light">
             <DisplayModal toggle={toggle} modal={modal} view={view}/>
-            <Container >
+            <Container>
                 <Row style={{justifyContent:"center"}}>
-                    {/* <div ref={refFeatures}> */}
+                    {/* <div ref={ref}> */}
                 <InputGroup size="sm" style={{maxWidth:'60%',minWidth:'50%',marginBottom:'5vh',marginTop:'10vh'}}>
                     <Input placeholder="Search Images..."
                     type="text"
